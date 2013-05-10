@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+@loader: "../img/ajax-loader.gif";
+
+#result {
+    ul.thumbnails {
+        li {
+            width: 150px;
+            height: 150px;
+            background: url(@loader) no-repeat center;
+            a {
+                width: 150px;
+                height: 150px;
+            }
+        }
+    }
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    div {
+       position: absolute;
+//       top: 50%;
+       left: 50%;
+       background: white url(@loader) no-repeat center;
+
+   }
+}
+
+div.footer {
+    margin-bottom: 50px;
+    }

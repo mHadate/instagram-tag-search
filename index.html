@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>instagram tag search</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="css/application.css" rel="stylesheet" media="screen">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>//google.load("jquery", "1");</script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="cat.js"></script>
+</head>
+<body>
+  <div class="hero-unit">
+    <h1>instagram tag search</h1>
+    <p>instagramのタグ検索</p>
+  </div>
+  <form method="get" action="/" class="form-search text-center" id="tagSearch">
+      <select class="span2" name="result">
+        <option value="10" selected="selected">10件</option>
+        <option value="20">20件</option>
+        <option value="30">30件</option>
+        <option value="40">40件</option>
+      </select>
+      <input type="search" id="keyword" name="keyword" placeholder="type search tag" class="input-xlarge search-query" value="cat">
+      <button type="submit" class="btn btn-primary">Search</button>
+    <p>※必ずしも選択した件数が出るわけじゃないです。。。</p>
+  </form>
+  <div class="row-fluid">
+    <div id="result" class="span10 offset1"></div>
+  </div>
+  <div class="row-fluid footer">
+    <div class="text-center span10 offset1">
+      <button class="btn btn-large btn-block btn-primary" type="button" id="more">more</button>
+    </div>
+  </div>
+</body>
+</html>
