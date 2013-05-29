@@ -15,10 +15,44 @@
   background: rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
-#overlay div {
+#overlay div.img-polaroid {
   position: absolute;
   left: 50%;
+  overflow: hidden;
   background: #ffffff url("../img/ajax-loader.gif") no-repeat center;
+  cursor: auto;
+}
+#overlay div.img-polaroid:hover div.instagram-metadata {
+  opacity: 1;
+}
+#overlay div.img-polaroid div.instagram-metadata {
+  display: table;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition-propaty: opacity;
+  transition-duration: 0.5s;
+  opacity: 1;
+  margin: 0 4px 4px;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+#overlay div.img-polaroid div.instagram-metadata div.icon,
+#overlay div.img-polaroid div.instagram-metadata div.metadataColumn {
+  display: table-cell;
+}
+#overlay div.img-polaroid div.instagram-metadata div.metadataColumn {
+  padding: 10px;
+}
+#overlay div.img-polaroid div.instagram-metadata div.icon {
+  padding: 10px;
+  vertical-align: middle;
+}
+#overlay div.img-polaroid div.instagram-metadata div.icon img {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: solid 1px #ccc;
 }
 div.footer {
   margin-bottom: 50px;
